@@ -79,15 +79,101 @@ a.active{
   }
 
   .social{
-    height: 100vh;
+    margin-top: 2em;
     position: relative;
     justify-content: center;
     align-items: center;
   }
-
+  .side{
+    width: 100%;
+    float: left;
+    align-items: center;
+    text-align: center;
+  }
   .card {
     margin: 1%;
     background: rgba(144, 186, 221,0.25);
     color: white;
     text-align: center;
+  }
+
+  .about{
+    background:  rgba(144, 186, 221,0.25);
+  }
+
+  .abt-footer{
+    color: #395f88;
+    text-align:center;
+    
+  }
+
+  .abt-footer a{
+    text-decoration: none;
+    color: #395f88;
+    
+  }
+
+  .about-header{
+    color: #fff;
+    font-family: 'Popins', sans-serif;
+    border: solid black;
+    padding: 1%;
+    position: relative;
+    fill: white;
+    fill-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*font-family: 'Montserrat', sans-serif;*/
+  }
+
+  .about-content{
+    padding: 1% 2% 1% 2% ;
+    border-left:10px solid grey;
+    border-right: 10px solid grey;
+    border-top:5px solid grey;
+    background-color:rgba(14, 19, 83, 0.733);
+    border-bottom: 5px dotted grey;
+    margin-top: 2%;
+  }
+
+  .about-content h3{
+    color: #9ac464;
+    font-family: 'Jura', sans-serif;
+  }
+
+  .about-content-desc{
+    border-left:10px solid grey;
+    border-right:10px solid grey;
+    background-color:rgba(31, 83, 126,0.5);
+    padding-left: 8%;
+    color: rgb(204, 184, 240);
+  }
+  
+  .about-content-desc img{
+    padding: 1% 2%;
+  }
+
+  .about-content-desc a{
+    color: rgb(248, 186, 186);
+    text-decoration: underline;
+  }
+
+  .about-sub{
+    border-left:10px solid grey;
+    border-right:10px solid grey;
+    background-color:rgba(31, 83, 126, 0.973);
+    font-family: 'Philosopher', sans-serif;
+    padding: 1% 0% 0% 4%;
+  }
+
+  .about-sub h4{
+    color: white;
+  }
+
+  .about-sub span{
+    size: 30px;
+    align-items: center;
+  }
+
+  #ind-img{
+    height: 48px;
   }
