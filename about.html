@@ -18,6 +18,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet"> 
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -52,14 +56,14 @@
     </nav>
     <!--Header End-->
     <div class="container about">
-        <div class="about-header row">
+        <!-- <div class="about-header row">
             <div style="text-align: left; width: 70%; height: 50px; float: left;">
                 <h1>Mohit Verma</h1>
             </div>
             <div style="width: 30%; text-align: right;"><img id="ind-img" src="img-res/india.svg" alt="ind-svg"></div>
-        </div>
+        </div> -->
 
-        <div class="about-content row">
+        <!-- <div class="about-content row">
             <h3><span class="material-icons">star</span> Skills</h3>
         </div>
 
@@ -101,9 +105,9 @@
         </div>
         <div class="about-content-desc row">
             <img src="img-res/icons8-mysql-logo-50.png" title="MySQL" alt="mysql">
-        </div>
+        </div> -->
 
-        <div class="about-content row">
+        <!-- <div class="about-content row">
             <h3><span class="material-icons">star</span> Projects</h3>
         </div>
 
@@ -150,15 +154,49 @@
         </div>
         <div class="about-content-desc row">
             <li>Website Link : <a href="http://corona19.freevar.com" target="blank"> Covid-19 Tracker</a></li>
-        </div>
+        </div> -->
     </div>
 
-    <div class="abt-footer">
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
-        <a target="_blank" href="https://icons8.com/icons/set/c-programming">C Programming</a>, <a target="_blank"
-            href="https://icons8.com/icons/set/c-plus-plus-logo">C++</a> and other icons by <a target="_blank"
-            href="https://icons8.com">Icons8</a>
+    <div class="container">
+        <div class="row about-area">
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <img class="img-responsive rounded mx-auto d-block" src="img-res/20210211_120408(1).jpg" width="100%" alt="" srcset="">
+                    </div>
+                    <div class="col-md-8 col-sm-6 pt-3">
+                        <h6>Name: Mohit Verma</h6>
+                        <h6>Profile: Full Stack Developer</h6>
+                        <h6>Email: mohitverma6598@gmail.com</h6>
+                        <h6>Phone: +91 7000-821-371</h6>
+                    </div>
+                    <div class="col-md-12 mt-5 mb-5">
+                        <h1>Skills</h1>
+                        <hr>
+                        <img src="img-res/icons8-c-programming-50.png" height="64px" alt="" srcset="">
+                        <img src="img-res/icons8-c++-50.png" height="64px" alt="" srcset="">
+                        <img src="img-res/icons8-android-os-50.png" height="64px" alt="" srcset="">
+                        <img src="img-res/icons8-bootstrap-50.png" height="64px" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h1>About Me</h1>
+                <hr>
+                <h6> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                    imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non
+                    nisi. Nulla porttitor accumsan tincidunt.</h6></br>
+                <h6>
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                    porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor
+                    at sem.</h6></br>
+                    <h6>
+                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                </h6>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -169,6 +207,49 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+
+<script>
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  var firebaseConfig = {
+
+    apiKey: "AIzaSyAaj4DwQFXMRCYDgzQbPLdQa-1xyY7CS3c",
+
+    authDomain: "github-page-4882a.firebaseapp.com",
+
+    projectId: "github-page-4882a",
+
+    storageBucket: "github-page-4882a.appspot.com",
+
+    messagingSenderId: "307020208085",
+
+    appId: "1:307020208085:web:2000e2f8137730ca274f5c",
+
+    measurementId: "G-V6MWQG8R0H"
+
+  };
+
+  // Initialize Firebase
+
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.analytics();
+
+</script>
 </body>
 
 </html>
