@@ -307,3 +307,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .btn-download:hover{
     background-color: papayawhip;
   }
+
+  .profile-img{
+    border:#7fff00 solid;
+  }
+
+  .text-head{
+    color: white;
+  }
