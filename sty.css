@@ -82,7 +82,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   
   li.nav-item:hover{
-    scale: 1.1;
+    animation-name: nav-popup;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
     background-color: rgba(28, 44, 7, 0.726);
   }
 
@@ -91,8 +93,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
   li.nav-item.active:hover{
-    scale: 1.1;
+    animation-name: nav-popup;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
     background-color: rgba(43, 110, 30, 0.726);
+  }
+
+  @keyframes nav-popup {
+    from{
+      scale: 1;
+    }
+    to{
+      scale: 1.1;
+    }
   }
 
   .social{
@@ -115,6 +128,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-color: rgba(120, 223, 72, 0.267);
     color: white;
     margin: 1%;
+    border-color: #7fff00;
+    border-width: 3px;
   }
 
   .card:hover{
@@ -152,7 +167,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
   .about-area h5{
-    color: rgba(209, 209, 209, 0.479);
+    color: rgb(255, 255, 255);
     text-align: justify;
     font-family: 'Roboto Slab', serif;
   }
@@ -179,6 +194,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .about{
     background:  rgba(144, 186, 221,0.25);
+  }
+  .about-first{
+    background: rgba(75, 146, 4, 0.25);
+  }
+  .about-me{
+    background: rgba(75, 146, 4, 0.6);
+  }
+
+  .about-me h5{
+    line-height: 1.5;
+  }
+
+  .about-me h5 a{
+    text-decoration: underline dotted #7fff00 3px;
+    color: white;
+  }
+
+  .about-me h5 a:hover{
+    animation-name: underline-fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-decoration: underline dotted #7fff00 3px;
+    color: white;
+  }
+
+  @keyframes underline-fade {
+    0% {text-decoration: underline dotted #7fff00 3px;}
+    50%{text-decoration: underline dotted #80ff0000 3px;}
+    100%{text-decoration: underline dotted #7fff00 3px;}
   }
 
   .abt-footer{
@@ -258,6 +302,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .about-sub span{
     size: 30px;
     align-items: center;
+  }
+
+  .skill-title{
+    background-color: #7fff00;
+    color: #000000;
+  }
+
+  .skill-title p{
+    color: #000000;
   }
 
   #ind-img{
