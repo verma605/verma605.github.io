@@ -72,7 +72,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
   nav{
-    background-color:rgba(0,0,0, 0.4)
+    background-color:rgba(0,0,0, 0.4);
+    font-family: 'Roboto Slab', serif;
   }
 
   li.nav-item{
@@ -234,19 +235,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     
   }
   .work-area{
-    margin-top: 5%;
-    padding: 5%;
-    background-color: rgba(120, 223, 72, 0.267);
+    /* background-color: rgba(120, 223, 72, 0.267); */
   }
+
+  .work-app-title{
+    background: rgba(75, 146, 4, 0.25);
+    /* border: #7fff00 10px solid; */
+    border-bottom: none;
+  }
+
   .work-app-title h1{
     color: #ffffff;
     font-family: 'Roboto Slab', serif;
   }
   .work-app-desc{
     
-    color: rgba(228, 228, 228, 0.685);
-    text-align: justify;
+    color: white;
     font-family: 'Roboto Slab', serif;
+    background: rgba(75, 146, 4, 0.6);
   }
   .abt-footer a{
     text-decoration: none;
@@ -382,7 +388,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .work-app-desc a{
     text-decoration: underline dotted #7fff00 3px;
-    color: rgba(228, 228, 228, 0.685);
+    color: white;
   }
 
   .work-app-desc a:hover{
@@ -391,4 +397,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     animation-iteration-count: infinite;
     text-decoration: underline dotted #7fff00 3px;
     color: rgba(228, 228, 228, 0.685);
+  }
+
+  .app-desc-img{
+    margin: auto; 
+    display: block;
+  }
+
+  .work-app-title-hr{
+      height: 3px; 
+      background-color: #7fff00; 
+      width: 66%;
+      margin-left: 0;
   }
