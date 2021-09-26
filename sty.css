@@ -220,7 +220,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-decoration: underline dotted #7fff00 3px;
-    color: white;
+    color: rgba(228, 228, 228, 0.685);;
   }
 
   @keyframes underline-fade {
